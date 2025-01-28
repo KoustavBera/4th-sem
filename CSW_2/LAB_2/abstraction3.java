@@ -15,6 +15,7 @@ abstract class Bike {
 
 class Yamaha extends Bike {
 
+    @Override
     void run() {
         System.out.println("Running smoothly");
     }
