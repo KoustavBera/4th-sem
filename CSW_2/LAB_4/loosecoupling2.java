@@ -27,16 +27,25 @@ class LenovoKeyboard implements keyboard {
 
 class Computer {
 
-    public void keyboardUsed(DellKeyboard dk) {
-        System.out.println("The computer is using " + dk.display());
+    public void keyboardUsed(keyboard k) {
+        System.out.println("The computer is using " + k.display());
     }
+    // public void keyboardUsed(DellKeyboard dk) {
+    //     System.out.println("The computer is using " + dk.display());
+    // }
+
+    // public void keyboardUsed(LenovoKeyboard lk) {
+    //     System.out.println("The computer is using " + lk.display());
+    // }
 }
 
 public class loosecoupling2 {
 
     public static void main(String[] args) {
         Computer obj = new Computer();
+        LenovoKeyboard lk = new LenovoKeyboard();
         DellKeyboard dk = new DellKeyboard();
+        obj.keyboardUsed(lk);
         obj.keyboardUsed(dk);
     }
 }
