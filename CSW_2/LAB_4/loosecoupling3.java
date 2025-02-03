@@ -7,6 +7,10 @@ interface P {
 
 class A implements P {
 
+    A(int x) {
+
+    }
+
     public void foo() {
         System.out.println("In th foo method of A");
     }
