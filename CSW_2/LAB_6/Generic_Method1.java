@@ -10,5 +10,7 @@ public class Generic_Method1 {
         genericShow(15);
         genericShow("Hello");
         genericShow(17.71);
+        genericShow(17.71f);
+
     }
 }
