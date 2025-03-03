@@ -25,5 +25,17 @@ public class generics_4 {
                 }
             }
         }
+
+        //Printing the elements after sorted
+        for (T i : a) {
+            System.out.println(i + ",");
+        }
+        System.out.println();
+    }
+
+    public static <T> void swap(int i, int j, T[] a) {
+        T t = a[i];
+        a[i] = a[j];
+        a[j] = t;
     }
 }
