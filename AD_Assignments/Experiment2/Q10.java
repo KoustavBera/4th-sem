@@ -1,7 +1,11 @@
 // determine path from u to v
+
 import java.util.*;
+
 public class Q10 {
+
     static class Edge {
+
         int src;
         int dest;
 
@@ -19,16 +23,16 @@ public class Q10 {
             graph[i] = new ArrayList<>();
         }
 
-								graph[0].add(new Edge(0, 3));
-								graph[2].add(new Edge(2, 3));
-						
-								graph[3].add(new Edge(3, 1));
-						
-								graph[4].add(new Edge(4, 0));
-								graph[4].add(new Edge(4, 1));
-						
-								graph[5].add(new Edge(5, 0));
-								graph[5].add(new Edge(5, 2));
+        graph[0].add(new Edge(0, 3));
+        graph[2].add(new Edge(2, 3));
+
+        graph[3].add(new Edge(3, 1));
+
+        graph[4].add(new Edge(4, 0));
+        graph[4].add(new Edge(4, 1));
+
+        graph[5].add(new Edge(5, 0));
+        graph[5].add(new Edge(5, 2));
 
         // Check for cycle detection
         boolean[] vis = new boolean[V];
