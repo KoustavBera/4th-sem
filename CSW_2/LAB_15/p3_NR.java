@@ -22,7 +22,8 @@ public class p3_NR {
 
         ob1 = null;
         ob2 = null;       //Suggest Garbage Collection
-        System.gc();
+        // after this we lost the address so the data is useless so it becomes useless memory
+        System.gc(); // RUN THE GARBAGE COLLECTOR
 
         try {
             Thread.sleep(1000);

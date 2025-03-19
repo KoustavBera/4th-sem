@@ -1,7 +1,7 @@
 package CSW_2.LAB_15;
 
 public class p4_AO {
-
+// Anonymous object
     private String name;
 
     public p4_AO(String name) {
