@@ -7,5 +7,9 @@ public class p4_StringConcatenation {
         String s2 = "There!";
         String s3 = s1 + s2;
         System.out.println(s3);
+        String s5 = 50 + "yy" + 50;
+        System.out.println("My weight is " + 80);
+        System.out.println("xyz" + null); // Null Pointer excep
+        System.out.println(s1.concat(50)); // exception
     }
 }
