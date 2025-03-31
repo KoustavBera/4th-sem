@@ -26,7 +26,7 @@ public class p2_StringBuffer {
 
         //6. get the current capacity of the stringBuffer
         int capacity = sb.capacity();
-        System.out.println("Current capacity " + (capacity0 111111111111111111111));
+        System.out.println("Current capacity " + (capacity));
 
         // 7. Get the length of the StringBuffer
         int length = sb.length();
