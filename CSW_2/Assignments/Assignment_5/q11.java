@@ -42,3 +42,10 @@ public class q11 {
 		sc.close(); // Close Scanner outside try-catch
 	}
 }
+/*
+ * OUTPUT
+ * File already exists. Your content will be added to the file.
+ * Enter contents of file:
+ * test10.txt
+ * Diary entry added successfully!
+ */

@@ -24,3 +24,9 @@ public class q13 {
 		}
 	}
 }
+/*
+ * OUTPUT
+ * Enter file to be deleted
+ * HeyBuddy.txt
+ * file deleted successfully
+ */

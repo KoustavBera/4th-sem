@@ -23,3 +23,13 @@ public class q15 {
 		}
 	}
 }
+/*
+ * OUTPUT
+ * Enter the file name
+ * test1.txt
+ * Rename
+ * test10.txt
+ * File does not exist
+ * File rename success
+ * 
+ */

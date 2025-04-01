@@ -36,3 +36,14 @@ public class q14 {
 		}
 	}
 }
+/*
+ * 
+ * OUTPUT
+ * Enter the source path
+ * test10.txt
+ * Enter the destination path
+ * HeyBuddy.txt
+ * Destination file already exist! Overwrite?(y/n)
+ * n
+ * Operation cancelled
+ */
