@@ -42,3 +42,9 @@ public class q9 {
         }
     }
 }
+/*
+ * OUTPUT
+ * Enter contents of file
+ * HI I AM KOUSTAC
+ * File created successfully
+ */

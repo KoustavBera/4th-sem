@@ -30,3 +30,12 @@ public class q12 {
 		}
 	}
 }
+/*
+ * OUTPUT
+ * Listing files and directory in : C:\Users\<username>\OneDrive\Desktop\4th Sem
+ * [file] diary.txt
+ * [file] q1.java
+ * [file] q8.java
+ * [file] q9.java
+ * [file] test10.txt
+ */

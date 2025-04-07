@@ -47,3 +47,14 @@ public class q8 {
 		}
 	}
 }
+/*
+ * OUTPUT
+ * Enter a string
+ * HIi
+ * 1: convert string to upper/lower case
+ * 2: search for a character
+ * 3: concatenate with other string
+ * 4: exit
+ * Enter choice
+ * 4
+ */
