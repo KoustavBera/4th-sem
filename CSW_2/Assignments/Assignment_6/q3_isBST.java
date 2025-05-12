@@ -10,7 +10,7 @@ class Node {
         this.info = info;
         left = right = null;
     }
-}
+} 
 
 public class q3_isBST {
 
