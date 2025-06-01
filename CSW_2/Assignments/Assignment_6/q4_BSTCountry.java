@@ -1,60 +1,77 @@
-package CSW_2.Assignments.Assignment_6;
-
-/* Create a class Country with members for name and population, along with a 
-constructor and necessary methods.  */
 class Country {
 	String name;
 	int population;
 
-	public Country(
-			String name,
-			int population) {
+	public Country(String name, int population) {
 		this.name = name;
 		this.population = population;
-	}
 
-	public String getName() {
-		return this.name;
-	}
-
-	public int getPop() {
-		return this.population;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setPopulation(int population) {
-		this.population = population;
 	}
 }
 
-/*
- * s. Define a class BNode to store a Country object and
- * maintain references to its left and right children.
- */
 class BNode {
-	Country c;
+	Country obj_Country;
 	BNode left, right;
 
-	public BNode(Country c) {
-		this.c = c;
-		left = right = null;
+	public BNode(Country obj_Country) {
+		this.obj_Country = obj_Country;
+		this.left = this.right = null;
 	}
 }
 
-/*
- * - . Implement a class BSTCountry with
- * a root node, a constructor, and a method to insert countries into the tree
- * based on their
- * population.
- */
 public class q4_BSTCountry {
-	q4_BSTCountry root;
+	BNode root;
 
 	public q4_BSTCountry() {
-		root = null;
+		this.root = null;
 	}
 
+	// method to insert trees into BST
+	public void insert(Country c) {
+		root = insertRec(root, c);
+	}
+
+	private BNode insertRec(BNode root, Country c) {
+		if (root == null) {
+			return new BNode(c);
+		}
+
+		if (c.population <= root.obj_Country.population) {
+			root.left = insertRec(root.left, c);
+		} else {
+			root.right = insertRec(root.right, c);
+		}
+
+		return root;
+	}
+
+	public void preorder() {
+		if (root == null)
+			return;
+		preorderRec(root);
+		System.out.println();
+	}
+
+	private void preorderRec(BNode root) {
+		if (root == null)
+			return;
+		System.out.print(root.obj_Country.name + " ");
+		preorderRec(root.left);
+		preorderRec(root.right);
+	}
+
+	public static void main(String[] args) {
+		Country c1 = new Country("IND", 1444000);
+		Country c2 = new Country("CN", 1440000);
+		Country c3 = new Country("US", 334000);
+		Country c4 = new Country("UK", 114000);
+		Country c5 = new Country("PAK", 334000);
+		q4_BSTCountry ob = new q4_BSTCountry();
+		ob.insert(c1);
+		ob.insert(c2);
+		ob.insert(c3);
+		ob.insert(c4);
+		ob.insert(c5);
+		ob.preorder();
+	}
 }
