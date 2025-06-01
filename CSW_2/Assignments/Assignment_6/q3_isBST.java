@@ -4,11 +4,23 @@ class BSTNode {
 	int info;
 	BSTNode left, right;
 
+<<<<<<< HEAD
 	public BSTNode(int info) {
 		this.info = info;
 		left = right = null;
 	}
 }
+=======
+    int info;
+    Node left;
+    Node right;
+
+    public Node(int info) {
+        this.info = info;
+        left = right = null;
+    }
+} 
+>>>>>>> fc8ecc533e180847c53c143bcda5de81eca18415
 
 public class q3_isBST {
 	BSTNode root;
